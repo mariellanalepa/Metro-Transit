@@ -8,4 +8,7 @@ The project was meant to imitate a rudimentary public transit management system 
 2. Scheduling from a Human Resources (HR) perspective: the assignment of transit resources – fleet vehicles and vehicle operators – to instances of established transit routes, and
 3. Self-management of employee profiles, including login credentials, contact information, and emergency contacts.
 
+The database was populated with dummy data using random data generator tools. 
+
 The first 40% of project was devoted to the conceptual and functional design of the database system, including creation of an ERD (Entity-Relationship Diagram) and relational schema as well as data flow diagrams for the system (HIPO and DFD). 
+
