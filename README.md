@@ -1,6 +1,6 @@
 # CPSC-471
 ## Data Base Management Systems Project
-Database web application completed as part of coursework for an introductory relational databases course. The project was completed solo for 30% of the course's final grade, and was my first exploration into web app development. 
+Database web application completed as part of coursework for an introductory relational databases course. The project was completed for 30% of the course's final grade, and was my first exploration into web app development. 
 The application was built on an AMP (Apache-MySQL-PHP) stack using the Laravel PHP framework to facilitate development in the MVC (Model-View-Controller) pattern. 
 
 The project was meant to imitate a rudimentary public transit management system wherein the web portal would provide:
