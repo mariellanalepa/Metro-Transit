@@ -1,0 +1,37 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap's source Sass files
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+//For read-only forms (before editing enabled)
+form {
+  &.is-readonly {
+    .btn-save {
+      display: none;
+    }
+    input,textarea{
+      &[disabled] {
+        cursor: text;
+        background-color: #fff;
+        border-color: transparent;
+        outline-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+  &.is-editing { 
+    .btn-edit{
+      display: none;
+    }
+  }
+}

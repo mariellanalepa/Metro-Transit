@@ -1,0 +1,92 @@
+@extends('layouts.base')
+
+@section('content')
+    @include('common.status')
+    <a class="btn btn-primary" href="{{ route('public') }}">Return to search options</a>
+    <hr>
+    <h3>Schedule for {{ $stop->stopName }} </h3>
+    <hr>
+    <!-- Route Table -->
+    <!-- Wrap it in table-responsive container -->
+    <div class="table-responsive text-center">
+        {{ csrf_field() }}
+        <table class="table" id="table">
+            <!-- Table Header -->
+            <thead>
+                <tr>
+                    <th class="text-center">Route number</th>
+                    <th class="text-center">Arrival time</th>
+                </tr>
+            </thead>
+            <!-- Table Body -->
+            <tbody>
+            <!-- Display info for each route -->
+            @php 
+            $keys = array_keys($routeTimes)
+            @endphp
+            @for ($i = 0; $i < count($routeTimes); $i++)
+              @foreach($routeTimes[$keys[$i]] as $routeNumber => $arrivalTime)
+                <tr>
+                    <td>{{ $keys[$i] }}</td>
+                    <td>{{ $arrivalTime }}</td>
+                </tr>
+              @endforeach
+            @endfor
+            </tbody>
+        </table>
+    </div>     
+@stop
+
+@section('css')
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+@stop
+
+
+@section('js')
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" defer></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  
+<script>
+    /* Script to initialize datepicker */
+    $( function() {
+    $( "#datepicker" ).datepicker({
+        dateFormat: 'yy-mm-dd'});
+    } );
+    
+    /* jQuery ready() method makes function available only after
+         document is "ready", i.e., loaded 
+     * 
+     */
+    $(document).ready(function() {
+        // Use DataTable plugin to make table interactive
+        var $table = $('#table').DataTable({
+            "order": [[ 0, 'asc' ], [ 1, 'asc' ]],
+            // Hide search 
+            "searching": false,
+            "paging": true,
+            "lengthchange": false,
+            "info": false
+        });
+        
+        // Select item
+        $('#table tbody').on('click', 'tr', function() {
+            if ($(this).hasClass('selected'))
+            {
+                $(this).removeClass('selected');
+            }
+            else
+            {
+                $('#table tbody tr').removeClass('selected');
+                $(this).addClass('selected');
+            }
+            var $routeId = $table.row(this).data()[0];
+            $('#selected').val($routeId);
+        })
+    });
+</script>    
+
+@stop

@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9-Apr-2019, 12:34:12 PM
+    Author     : Mariella
+*/
+
+ <style>  
+     /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+        
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    html,body,.container-fluid.text-center,.row.content {height: 100%}
+    
+    /* Add padding to top of main content */
+    .col-sm-8.text-left{ padding-top: 20px; }
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #4d5061;
+      height: 100%;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
