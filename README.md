@@ -12,3 +12,6 @@ The database was populated with dummy data using random data generator tools.
 
 The first 40% of project was devoted to the conceptual and functional design of the database system, including creation of an ERD (Entity-Relationship Diagram) and relational schema as well as data flow diagrams for the system (HIPO and DFD). 
 
+<p align="center">
+<img src="demo.png" width="50%" height="50%">
+</p>
