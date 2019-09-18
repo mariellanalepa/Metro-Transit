@@ -11,7 +11,7 @@ The project was meant to imitate a rudimentary public transit management system 
 
 The database was populated with dummy data using random data generator tools. 
 
-The first 40% of project was devoted to the conceptual and functional design of the database system, including creation of an ERD (Entity-Relationship Diagram) and relational schema as well as data flow diagrams for the system (HIPO and DFD). 
+The first 40% of project was devoted to the conceptual and functional design of the database system, including creation of an ERD (Entity-Relationship Diagram) and relational schema as well as data flow diagrams for the system (HIPO and DFD). The turnaround on the app portion of the project was tight - three weeks from relational model to functional design, two weeks from design to delivery of app.
 
 <p align="center">
   <img src="img/demo.png" width="50%" height="50%">
