@@ -1,7 +1,8 @@
 # Metro Transit
 ## Data Base Management Systems Project
-Database web application completed as part of coursework for an introductory relational databases course. The project was completed for 30% of the course's final grade, and was my first exploration into web app development. 
-The application was built on an AMP (Apache-MySQL-PHP) stack using the Laravel PHP framework to facilitate development in the MVC (Model-View-Controller) pattern. Laravel brings together various components to make authenication, routing, sessions, and database interactions easier.
+Database web application completed as part of coursework for an introductory relational databases course. Students were required to build either a desktop or web application backed by a database designed on a chosen problem. I had no experience with any sort of web development but chose to jump in with both feet (I don't necessarily advise this). 
+
+The application was built on an AMP (Apache-MySQL-PHP) stack using the Laravel PHP framework to facilitate development in the MVC (Model-View-Controller) pattern. Laravel brings together various components to make authenication, routing, sessions, and database interactions easier. 
 
 The project was meant to imitate a rudimentary public transit management system wherein the web portal would provide:
 1. Public access to trip planning resources, such as route and stop schedules, 
