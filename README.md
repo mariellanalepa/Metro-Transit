@@ -1,6 +1,6 @@
 # Metro Transit
 ## Data Base Management Systems Project
-Database web application completed as part of coursework for an introductory relational databases course. Students were required to build either a desktop or web application backed by a database designed on a chosen problem. I had no experience with any sort of web development but chose to jump in with both feet (I don't necessarily advise this). 
+Database web application completed as part of coursework for an introductory relational databases course. Students were required to build either a desktop or web application backed by a database designed on a chosen problem. I had no experience with any sort of web development but chose to jump in with both feet - not necessarily advised, but quite the learning experience. 
 
 The application was built on an AMP (Apache-MySQL-PHP) stack using the Laravel PHP framework to facilitate development in the MVC (Model-View-Controller) pattern. Laravel brings together various components to make authenication, routing, sessions, and database interactions easier. Bootstrap was used for front-end web design.
 
